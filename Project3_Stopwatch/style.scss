@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__dial {
+        margin-top: 50px;
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background-image: url('img/dial.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &__minutes {
+            width: 125px;
+            height: 125px;
+            border-radius: 50%;
+            position: absolute;
+            top: 190px;
+            left: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &__vector1 {
+                width: 40px;
+                height: 125px;
+                padding-top: 10px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                &__arrow1 {
+                    width: 2px;
+                    height: 40px;
+                    background: red;
+                }
+    
+                &__circle1 {
+                    width: 25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    background: red;
+                }
+    
+                &__tail1 {
+                    width: 3px;
+                    height: 15px;
+                    background: red;
+                }
+            }
+        }
+
+        &__vector {
+            width: 40px;
+            height: 500px;
+            padding-top: 32px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__arrow {
+                width: 3px;
+                height: 200px;
+                background: red;
+            }
+
+            &__circle {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: red;
+            }
+
+            &__tail {
+                width: 6px;
+                height: 40px;
+                background: red;
+            }
+        }
+    }
+
+    &__wath {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        &__points {
+            font-size: 60px;
+            font-weight: 900;
+            color: green;
+        }
+
+        &__time {
+            width: 100px;
+            height: 100px;
+            font-size: 60px;
+            font-weight: 700;
+            text-align: center;
+            pointer-events: none;
+            border-radius: 20px;
+            border: 3px solid green;
+        }
+    }
+
+    &__buttons {
+        margin-top: 30px;
+        display: flex;
+        gap: 85px;
+
+        &__button {
+            width: 100px;
+            height: 100px;
+            border-radius: 20px;
+            border: 3px solid green;
+            background-color: white;
+            color: green;
+            font-size: 25px;
+            font-weight: 700;
+            transition: .3s;
+
+            &:hover {
+                border: 3px solid yellowgreen;
+                color: yellowgreen;
+            }
+
+            &:active {
+                background-color: green;
+                color: white;
+            }
+        }
+    }
+}
