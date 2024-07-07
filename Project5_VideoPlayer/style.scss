@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gwendolyn", cursive;
+}
+
+.center {
+    padding-left: calc(50% - 570px);
+    padding-right: calc(50% - 570px);
+}
+
+.player {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+
+    &__text {
+
+        &__name {
+            color: darkblue;
+            font-size: 100px;
+            font-weight: 700;
+        }
+    }
+
+    &__video {
+        width: 1000px;
+
+        &__window {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__controls {
+        width: 1000px;
+        height: 60px;
+        display: flex;
+        gap: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+
+        &__button {
+            width: 50px;
+            height: 50px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        &__time {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            &__block {
+
+                &__p {
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: white;
+                }
+            }
+        }
+
+        &__progress {
+            display: flex;
+            align-items: center;
+
+            &__bar {
+                width: 200px;
+                cursor: pointer;
+            }
+
+            &__volume {
+                width: 100px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+svg {
+    fill:white;
+    transition: .3s;
+
+    &:hover {
+        fill: red;
+    }
+
+    &:active {
+        fill: yellowgreen;
+    }
+}
+
+.by {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+
+    &__name {
+        color: darkblue;
+        font-size: 50px;
+        font-weight: 500;
+    }
+}

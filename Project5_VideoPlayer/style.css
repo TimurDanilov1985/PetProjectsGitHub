@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gwendolyn", cursive;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.player {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  position: relative;
+}
+.player__text__name {
+  color: darkblue;
+  font-size: 100px;
+  font-weight: 700;
+}
+.player__video {
+  width: 1000px;
+}
+.player__video__window {
+  width: 100%;
+  display: block;
+}
+.player__controls {
+  width: 1000px;
+  height: 60px;
+  display: flex;
+  gap: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+}
+.player__controls__button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.player__controls__time {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.player__controls__time__block__p {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.player__controls__progress {
+  display: flex;
+  align-items: center;
+}
+.player__controls__progress__bar {
+  width: 200px;
+  cursor: pointer;
+}
+.player__controls__progress__volume {
+  width: 100px;
+  cursor: pointer;
+}
+
+svg {
+  fill: white;
+  transition: 0.3s;
+}
+svg:hover {
+  fill: red;
+}
+svg:active {
+  fill: yellowgreen;
+}
+
+.by {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+}
+.by__name {
+  color: darkblue;
+  font-size: 50px;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
