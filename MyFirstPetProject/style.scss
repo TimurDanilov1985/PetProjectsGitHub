@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+
+    &__calculator {
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 50px;
+        width: 600px;
+        height: 800px;
+        background-color: #09111E;
+        border-radius: 20px;
+
+        &__form {
+
+            &__input {
+                width: 560px;
+                height: 100px;
+                box-sizing: border-box;
+                border-radius: 10px;
+                padding: 20px;
+                font-family: "Open Sans", sans-serif;
+                font-size: 80px;
+                font-weight: 800;
+                text-align: end;
+
+                &[type="number"]::-webkit-outer-spin-button,
+                &[type="number"]::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        &__buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            &__button {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: #263763;
+                color: white;
+                font-family: "Open Sans", sans-serif;
+                font-size: 40px;
+                border: 0;
+
+                &:active {
+                    background-color: #0c1837;
+                }
+            }
+
+            .color {
+                background-color: orange
+            }
+
+            .color:active {
+                background-color: rgb(169, 131, 58)
+            }
+
+            &__buttonZero {
+                width: 230px;
+                height: 100px;
+                border-radius: 50px 50px 50px;
+                background-color: #263763;
+                color: white;
+                font-family: "Open Sans", sans-serif;
+                font-size: 40px;
+                border: 0;
+
+                &:active {
+                    background-color: #0c1837;
+                }
+            }
+        }
+    }
+}
